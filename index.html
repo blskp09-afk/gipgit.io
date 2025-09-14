@@ -182,8 +182,13 @@
             <p>Ревизия</p>
         </button>
     </footer>
-    
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+   
+   
+  
     <script>
+        const tg = window.Telegram.WebApp;
+        tg.expand(); // Открываем на весь экран
         if (window.innerWidth > 768) {
           document.write("<h2>Сайт доступен только с телефона 📱</h2>");
         }
@@ -394,4 +399,5 @@
         }
     </style>
 </body>
+
 </html>
