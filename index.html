@@ -16,8 +16,8 @@
             <h1>Закуп</h1>
         </div>
         <div class="slider">   
-            <a href="#"><div class="slids">Водка</div></a>
-            <a href="#"><div class="slids">Пиво</div></a>
+            <a href="#vodka"><div class="slids">Водка</div></a>
+            <a href="#pivo"><div class="slids">Пиво</div></a>
             <a href="#"><div class="slids">Коньяк</div></a>
             <a href="#"><div class="slids">Шампанское</div></a>
             <a href="#"><div class="slids">Вино</div></a>
@@ -30,7 +30,7 @@
     </header>
     <main>
         <div class="main">
-            <div class="prefix"><h3>Водка</h3></div>
+            <div class="prefix" id="vodka"><h3>Водка</h3></div>
             <div class="plitki">
                 <div class="card">
                     <div class="img"></div>
@@ -38,11 +38,10 @@
                     <div class="actions">
                         <button class="buy">Заказать</button>
                     </div>
-                    
                 </div>
                 <div class="card">
                     <div class="img"></div>
-                    <h4>Кызылжар</h4>
+                    <h4>Green Step</h4>
                     <div class="actions">
                         <button class="buy">Заказать</button>
                     </div>
@@ -50,7 +49,7 @@
                 </div>
                 <div class="card">
                     <div class="img"></div>
-                    <h4>Кызылжар</h4>
+                    <h4>Хаома</h4>
                     <div class="actions">
                         <button class="buy">Заказать</button>
                     </div>
@@ -58,7 +57,7 @@
                 </div>
                 <div class="card">
                     <div class="img"></div>
-                    <h4>Кызылжар</h4>
+                    <h4>Хаома Ise</h4>
                     <div class="actions">
                         <button class="buy">Заказать</button>
                     </div>
@@ -66,7 +65,7 @@
                 </div>
                 <div class="card">
                     <div class="img"></div>
-                    <h4>Кызылжар</h4>
+                    <h4>Кызылжар Gold</h4>
                     <div class="actions">
                         <button class="buy">Заказать</button>
                     </div>
@@ -74,7 +73,18 @@
                 </div>
                 <div class="card">
                     <div class="img"></div>
-                    <h4>Кызылжар</h4>
+                    <h4>Годунов</h4>
+                    <div class="actions">
+                        <button class="buy">Заказать</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="prefix" id="pivo"><h3>Пиво</h3></div>
+            <div class="plitki">
+                <div class="card">
+                    <div class="img"></div>
+                    <h4>Разлив</h4>
                     <div class="actions">
                         <button class="buy">Заказать</button>
                     </div>
@@ -82,7 +92,7 @@
                 </div>
                 <div class="card">
                     <div class="img"></div>
-                    <h4>Кызылжар</h4>
+                    <h4>Холстан</h4>
                     <div class="actions">
                         <button class="buy">Заказать</button>
                     </div>
@@ -90,7 +100,7 @@
                 </div>
                 <div class="card">
                     <div class="img"></div>
-                    <h4>Кызылжар</h4>
+                    <h4>Миллер</h4>
                     <div class="actions">
                         <button class="buy">Заказать</button>
                     </div>
@@ -98,7 +108,7 @@
                 </div>
                 <div class="card">
                     <div class="img"></div>
-                    <h4>Кызылжар</h4>
+                    <h4>Б/А</h4>
                     <div class="actions">
                         <button class="buy">Заказать</button>
                     </div>
@@ -106,7 +116,7 @@
                 </div>
                 <div class="card">
                     <div class="img"></div>
-                    <h4>Кызылжар</h4>
+                    <h4>Бланш</h4>
                     <div class="actions">
                         <button class="buy">Заказать</button>
                     </div>
@@ -114,15 +124,7 @@
                 </div>
                 <div class="card">
                     <div class="img"></div>
-                    <h4>Кызылжар</h4>
-                    <div class="actions">
-                        <button class="buy">Заказать</button>
-                    </div>
-                    
-                </div>
-                <div class="card">
-                    <div class="img"></div>
-                    <h4>Кызылжар</h4>
+                    <h4>Бланш Роз</h4>
                     <div class="actions">
                         <button class="buy">Заказать</button>
                     </div>
@@ -171,26 +173,22 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
-        <button>
+    <footer class="footer" >
+        <button class="a">
+            <img src="zak.png" >
             <p>Закуп</p>
         </button>
-        <button>
+        <button class="b">
+            <img src="prihod.png" >
             <p>Приход</p>
         </button>
-        <button>
+        <button class="c">
+            <img src="reviz.png" >
             <p>Ревизия</p>
         </button>
     </footer>
-   
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    
     <script>
-      const tg = window.Telegram.WebApp;
-      tg.expand(); // Растягиваем на полный экран
-    </script>
-  
-    <script>
-        
         if (window.innerWidth > 768) {
           document.write("<h2>Сайт доступен только с телефона 📱</h2>");
         }
@@ -253,11 +251,13 @@
 
 
     <style>
+        .prefix{
+            margin: 20px;
+        }
         .counter span{
             margin: 13px;
         }
         .counter button {
-            
             border-radius: 10px;
             width: 35px;
             height: 35px;
@@ -271,12 +271,9 @@
             display: flex;             /* элементы в строку */
             overflow-x: auto;          /* скролл по горизонтали */
             scroll-snap-type: x mandatory; /* мягкая фиксация при скролле */
-                            /* расстояние между карточками */
-
         }
 
         .slids {
-            
             padding: 8px;
             flex: 0 0 auto;            /* фиксированный размер, не сжимается */
             display: flex;
@@ -305,9 +302,6 @@
         .plitki {
             display: grid;
             grid-template-columns: repeat(3, 1fr); /* 3 колонки */
-            
-
-            
             margin: 10px;
             gap: 10px;
         }
@@ -321,11 +315,10 @@
             background: linear-gradient(to top, #193BAA, #2622AA);
         }
         .card {
-            
             text-align: center;
             justify-content: center;
             border-radius: 20px;
-            width: 130px;
+            width: 120px;
             height: 200px;
             background-color: #081227;
             
@@ -371,9 +364,6 @@
             position: fixed;
             left: 0;
             bottom: 0;
-            position: fixed;
-            left: 0;
-            bottom: 0;
             display: flex;
             justify-content: center; /* горизонталь */
             align-items: center; 
@@ -381,17 +371,25 @@
             width: 100%;
             height: 100px;
             background: linear-gradient(to top, #081227, #07308B)
+            
         }
         footer button {
-            width: 64px;
-            height: 65px;
-            margin: 40px;
+
+            width: 90px;
+            height: 70px;
+            margin: 20px;
             background-color: #15316E;
             border-radius: 10px;
-
+            border: 3px solid #041a4b;
+            cursor: pointer;
         }
+       footer button img {
+        width: 40px;
+       }
         
-
+       footer .a{
+        background-color: #0A4968;
+       }
 
         /* Если ширина <= 768px (телефон) — показываем */
         @media (max-width: 768px) {
@@ -401,8 +399,4 @@
         }
     </style>
 </body>
-
 </html>
-
-
-
